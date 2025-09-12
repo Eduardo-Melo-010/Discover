@@ -24,6 +24,7 @@ body * {
   margin: 56px auto 0px auto;
   /*margin-right: auto;
   margin-left: auto;*/ 
+  padding: 0 24px;
 }
 
 #profile {
@@ -48,6 +49,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px 0;
 }
 
 ul li a {
@@ -60,4 +62,27 @@ ul li a {
   border-radius: 8px;
   backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+}
+
+#social-links {
+  display: flex;
+  padding: 30px 0;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  font-size: 24px;
+}
+
+ion-icon {
+  width: 30px;
+  height: 30px;
 }
